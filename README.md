@@ -3,7 +3,7 @@
 
 Aplikasi web Fullstack untuk menganalisis sentimen ulasan produk secara otomatis menggunakan AI. Proyek ini dibangun untuk mendemonstrasikan integrasi antara React.js, Python Pyramid, dan Modern AI APIs.
 
-![Tampilan Aplikasi](./assets/apk-review-analis.png)
+![Tampilan Aplikasi](./asset/apk-review-analis.png)
 
 ## ✨ Fitur Utama
 - **Analisis Sentimen Real-time:** Menggunakan model **RoBERTa (Hugging Face)** untuk mendeteksi sentimen Positif/Negatif/Netral.
