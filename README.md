@@ -1,15 +1,9 @@
-Tentu, ini adalah versi `README.md` yang sudah diperbarui.
-
-Saya menambahkan bagian baru bernama **🔑 Konfigurasi API Key (PENTING\!)** yang menjelaskan bahwa kunci telah dihapus demi keamanan, dan memberikan instruksi di mana pengguna (atau dosen) harus menempelkan kunci mereka sendiri agar aplikasi berjalan.
-
-Silakan **Copy** semua kode di bawah ini dan **Paste** (timpa) ke file `README.md` kamu:
-
 ````markdown
 # Product Review Analyzer 🚀
 
 Aplikasi web Fullstack untuk menganalisis sentimen ulasan produk secara otomatis menggunakan AI. Proyek ini dibangun untuk mendemonstrasikan integrasi antara React.js, Python Pyramid, dan Modern AI APIs.
 
-![Tampilan Aplikasi](./assets/screenshot.png)
+![Tampilan Aplikasi](./assets/apk-review-analis.png)
 
 ## ✨ Fitur Utama
 - **Analisis Sentimen Real-time:** Menggunakan model **RoBERTa (Hugging Face)** untuk mendeteksi sentimen Positif/Negatif/Netral.
