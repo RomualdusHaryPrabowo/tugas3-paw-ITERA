@@ -1,10 +1,15 @@
+Tentu, ini adalah versi `README.md` yang sudah diperbarui.
+
+Saya menambahkan bagian baru bernama **🔑 Konfigurasi API Key (PENTING\!)** yang menjelaskan bahwa kunci telah dihapus demi keamanan, dan memberikan instruksi di mana pengguna (atau dosen) harus menempelkan kunci mereka sendiri agar aplikasi berjalan.
+
+Silakan **Copy** semua kode di bawah ini dan **Paste** (timpa) ke file `README.md` kamu:
+
 ````markdown
 # Product Review Analyzer 🚀
 
 Aplikasi web Fullstack untuk menganalisis sentimen ulasan produk secara otomatis menggunakan AI. Proyek ini dibangun untuk mendemonstrasikan integrasi antara React.js, Python Pyramid, dan Modern AI APIs.
 
-![App Screenshot](https://via.placeholder.com/800x400?text=Screenshot+Aplikasi+Disini)
-*(Ganti link ini dengan screenshot aplikasimu nanti)*
+![Tampilan Aplikasi](./assets/screenshot.png)
 
 ## ✨ Fitur Utama
 - **Analisis Sentimen Real-time:** Menggunakan model **RoBERTa (Hugging Face)** untuk mendeteksi sentimen Positif/Negatif/Netral.
@@ -18,15 +23,34 @@ Aplikasi web Fullstack untuk menganalisis sentimen ulasan produk secara otomatis
 - **Database:** PostgreSQL.
 - **AI Services:** Google Gemini API & Hugging Face Inference API.
 
+## 🔑 Konfigurasi API Key (PENTING!)
+Demi alasan keamanan (**GitHub Push Protection**), **API Key asli tidak disertakan** di dalam repository ini. Agar aplikasi dapat berjalan dengan fitur AI, Anda perlu memasukkan API Key Anda sendiri.
+
+1. Buka file `backend/ai_services.py`.
+2. Cari variabel `HF_API_TOKEN` dan `GEMINI_API_KEY` (biasanya di baris atas).
+3. Masukkan kunci Anda di sana:
+   - **Hugging Face Token:** Dapatkan di [Hugging Face Settings](https://huggingface.co/settings/tokens).
+   - **Gemini API Key:** Dapatkan di [Google AI Studio](https://aistudio.google.com/app/apikey).
+
+```python
+# Contoh di backend/ai_services.py:
+HF_API_TOKEN = "Bearer hf_MASUKKAN_TOKEN_HF_ANDA_DISINI" 
+GEMINI_API_KEY = "MASUKKAN_KEY_GEMINI_ANDA_DISINI"
+````
+
 ## ⚠️ Catatan Penggunaan (API Limits)
+
 Proyek ini menggunakan **Free Tier API** untuk layanan AI.
-- Jika muncul pesan `Quota Exceeded` atau `Error 429`, itu berarti batas kuota harian Google Gemini telah habis.
-- Jika sentimen loading lama, server Hugging Face sedang mengalami "Cold Start". Silakan coba tekan tombol analyze lagi.
+
+  - Jika muncul pesan `Quota Exceeded` atau `Error 429`, itu berarti batas kuota harian Google Gemini telah habis.
+  - Jika sentimen loading lama, server Hugging Face sedang mengalami "Cold Start". Silakan coba tekan tombol analyze lagi.
 
 ## 🚀 Cara Menjalankan (Local)
 
-### 1. Setup Backend
+### 1\. Setup Backend
+
 Buka terminal dan masuk ke folder backend:
+
 ```bash
 cd backend
 python -m venv venv
@@ -41,7 +65,7 @@ pip install pyramid waitress sqlalchemy psycopg2-binary requests google-generati
 
 # Jalankan Server
 python app.py
-````
+```
 
 *Server Backend berjalan di http://localhost:6543*
 
